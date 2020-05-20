@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/person_name_edit_text"
+            android:hint="Guest name"
+            android:inputType="textPersonName|textCapWords"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+        <EditText
+            android:id="@+id/party_count_edit_text"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Party size (max 99)"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_to_waitlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="addToWaitlist"
+        android:text="ADD Guest"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+    <Button
+        android:id="@+id/GOBACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goBack"
+        android:text="Cancel回上一頁"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+
+
+</LinearLayout>
